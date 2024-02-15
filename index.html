@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="components/header-component.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <script src="components/hero-component.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header-component></header-component>
+    <hero-component></hero-component>
+
+    <style>
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        section.about-me{
+            max-width: 1792px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
+            padding: 24px;
+        }
+        .vertical-50-photo-component{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .vertical-50-text-area-component{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .vertical-50-text-area-component p{
+            max-width: 587px;
+        }
+        .links{
+            white-space: pre-line;
+        }
+    </style>
+    <section class="about-me">
+        <div class="vertical-50-photo-component">
+            <img src="assets/profile-photo.png" alt="Profilowe Michał Bajerski" width="586px" height="756px" style="background-color: red;">
+        </div>
+        <div class="vertical-50-text-area-component">
+            <h1>Cześć, jestem Michał!</h1>
+            <p class="body-l">Jestem skoncentrowany na potrzebach użytkownika, łącząc je z celami biznesowymi klienta tak, aby stworzyć produkt działający i pełniący swoją rolę. Nastawiony na rozwój i efektywną pracę.</p>
+            <div class="links">
+                <a href="#">linkedin / michalbajerski</a>
+                <a href="#">behance / mbajerski</a>
+            </div>
+            <a class="btn-large-filled" href="#">Więcej o mnie</a>
+        </div>
+    </section>
 </body>
 </html>
